@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'SegoeWP';
+    src: local('SegoeWP'), local('SegoeWP'), url(./assets/fonts/SegoeWP.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lucida Sans italic';
+    src: local('Lucida Sans italic'), local('Lucida Sans italic'), url(./assets/fonts/LSANSI.TTF) format('truetype');
+}
+
 body {
     max-width: 1300px;
     margin: auto;
@@ -24,32 +34,81 @@ header {
 }
 .logo-bottom {
     position: relative;
-    top: -3px;
+    top: -2px;
     left: 4px;
 }
 
 figcaption {
-    margin: 10px 0 0 20px;
+    margin: 6px 0 0 10px;
     font-size: 41px;
     letter-spacing: 0px;
     color: #ffffff;
-    font-family: "Lucida Sans";
+    font-family: "Lucida Sans italic";
     font-style: italic;
     text-transform: uppercase;
 }
 nav {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    margin: 42px 2px 0 0;
-    text-align: right;
+    margin: 40px 2px 0 0;
+}
+
+nav ul {
+    display: flex;
+    box-shadow: -4px -4px #f5c50548, -8px -7px  #f5c50548;
 }
 
 nav li {
     display: inline-block;
-    width: 170px;
-    height: 41px;
-    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    width: 150px;
+    height: 42px;
+    background-color:#f5c505;
+    text-transform: uppercase;
+    font-family: "SegoeWP", Verdana, sans-serif;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
 }
 
+nav li div {
+    display: flex;
+    justify-content: center;
+    padding: 11px;
+}
+
+nav li p {
+    padding: 2px 0 0 0px;
+}
+#nav-head {
+    width: 173px;
+    border-right: 1px solid #b99403;
+}
+#nav-head object {
+    padding: 0 5px 0 16px;
+}
+#nav-head p {
+    padding: 2px 2px 0 5px;
+}
+#nav-wrench {
+    width: 130px;
+    border-right: 1px solid #b99403;
+}
+#nav-wrench object {
+    padding: 0 8px 0 0;
+}
+#nav-wrench p {
+    padding: 2px 6px 0 0;
+}
+#nav-mail {
+    width: 148px;
+}
+#nav-mail object {
+    padding: 0 7px 0 0;
+}
+#nav-mail p {
+    padding: 2px 6px 0 0;
+}
 .layout-1 {
     height: 566px;
     background-image: url("./assets/layouts/Layer1.png");
