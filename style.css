@@ -1,0 +1,43 @@
+body {
+    max-width: 1300px;
+    margin: auto;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+}
+
+.layout-1 {
+    height: 566px;
+    background-image: url("./assets/layouts/Layer1.png");
+    -webkit-box-shadow: inset 0px -12px 28px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -12px 28px -14px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -12px 28px -14px rgba(0,0,0,0.75);
+}
+
+.layout-2 {
+    height: 211px;
+    background-image: url("./assets/layouts/Layer2.png");
+
+}
+
+.layout-3 {
+    height: 509px;
+    background-image: url("./assets/layouts/Layer3.png");
+    -webkit-box-shadow: inset 0px 12px 28px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 12px 28px -14px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 12px 28px -14px rgba(0,0,0,0.75);
+}
+
+.layout-4 {
+    height: 498px;
+    background-image: url("./assets/layouts/Layer4.png");
+    -webkit-box-shadow: inset 0px -12px 9px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -12px 9px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -12px 9px -9px rgba(0,0,0,0.75);
+}
+
+.layout-5 {
+    height: 65px;
+    background-color: #4c4c4c;
+}
