@@ -43,7 +43,7 @@ figcaption {
     font-size: 41px;
     letter-spacing: 0px;
     color: #ffffff;
-    font-family: "Lucida Sans italic";
+    font-family: "Lucida Sans italic", Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-transform: uppercase;
 }
@@ -68,7 +68,6 @@ nav li {
     font-family: "SegoeWP", Verdana, sans-serif;
     font-size: 17px;
     letter-spacing: 0px;
-    color: #9b7d08;
 }
 
 nav li div {
@@ -76,9 +75,13 @@ nav li div {
     justify-content: center;
     padding: 11px;
 }
-
-nav li p {
+nav li a {
     padding: 2px 0 0 0px;
+    text-decoration: none;
+    color: #9b7d08;
+}
+nav li:hover{
+    opacity: 0.8;
 }
 #nav-head {
     width: 173px;
@@ -87,7 +90,7 @@ nav li p {
 #nav-head object {
     padding: 0 5px 0 16px;
 }
-#nav-head p {
+#nav-head a {
     padding: 2px 2px 0 5px;
 }
 #nav-wrench {
@@ -97,7 +100,7 @@ nav li p {
 #nav-wrench object {
     padding: 0 8px 0 0;
 }
-#nav-wrench p {
+#nav-wrench a {
     padding: 2px 6px 0 0;
 }
 #nav-mail {
@@ -106,7 +109,7 @@ nav li p {
 #nav-mail object {
     padding: 0 7px 0 0;
 }
-#nav-mail p {
+#nav-mail a {
     padding: 2px 6px 0 0;
 }
 .layout-1 {
