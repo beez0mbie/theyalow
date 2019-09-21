@@ -6,13 +6,26 @@ body {
     width: 1024px;
     margin: auto;
 }
+header {
+    position: relative;
+    top: 27px; 
+}
+.logo-1 {
+    position: absolute;
+    left: 1px;
+}
+.logo-2 {
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
 
 .layout-1 {
     height: 566px;
     background-image: url("./assets/layouts/Layer1.png");
     -webkit-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
--moz-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
+    box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
 }
 
 .layout-2 {
