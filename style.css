@@ -1,6 +1,12 @@
 @font-face {
-    font-family: 'SegoeWP';
-    src: local('SegoeWP'), local('SegoeWP'), url(./assets/fonts/SegoeWP.ttf) format('truetype');
+    font-family: 'Segoe WP';
+    src: local('Segoe WP'), url(./assets/fonts/SegoeWP.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-weight: 200;
+    src: local('Segoe UI Light'), url(./assets/fonts/segoeuil.ttf) format('truetype');
 }
 
 @font-face {
@@ -28,7 +34,7 @@ body {
 }
 
 .layout-2 {
-    height: 211px;
+    height: 212px;
     background-image: url("./assets/layouts/Layer2.png");
 
 }
@@ -106,7 +112,7 @@ nav li {
     height: 42px;
     background-color:#f5c505;
     text-transform: uppercase;
-    font-family: "SegoeWP", Verdana, sans-serif;
+    font-family: "Segoe WP", Verdana, sans-serif;
     font-size: 17px;
     letter-spacing: 0px;
 }
@@ -217,4 +223,71 @@ span.yellow {
     color: #f5c506;
     padding-right: 16px;
     padding-bottom: 5px;
+}
+
+#icon-area ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#icon-area ul li button{
+    height: 212px;
+    width: 339px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: none;
+    background: transparent;
+
+}
+
+#icon-area ul li button:hover{
+    opacity: 0.7;
+}
+#icon-area ul li button:active{
+    opacity: 0.7;
+    background-color: #b99403;
+}
+#icon-area ul li button:focus{
+    outline: none;
+}
+
+#icon-area ul li button span {
+    font-family: 'Segoe UI';
+    font-weight: 200;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+li #cloud {
+    padding: 49px 30px 22px 26px;
+}
+
+li #cloud span {
+    padding-left: 21px; 
+}
+
+button#cloud  {
+    border-right: none;
+}
+
+li #leaf {
+    padding: 23px 33px 19px 53px;
+}
+li #leaf object {
+    padding-left: 3px; 
+}
+
+li #paper-plane {
+    margin-left: 1px;
+    padding: 43px 29px 22px 7px;
+}
+
+li #paper-plane span {
+    padding-left: 4px;
+}
+
+button#paper-plane  {
+    border-left: none;
 }
