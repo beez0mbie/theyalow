@@ -24,15 +24,26 @@ body {
     margin: auto;
 }
 .layout-1 {
-    display: flex;
-    flex-flow: column;
-    height: 566px;
+    /* display: flex; */
+    /* flex-flow: column; */
+    /* height: 566px;
+    background-image: url("./assets/layouts/Layer1.png"); */
+    
+}
+.layout-1-1 {
+    height: 82px;
+    padding-top: 30px; 
+    background-position: 0 0;
     background-image: url("./assets/layouts/Layer1.png");
+}
+.layout-1-2 {
+    background-image: url("./assets/layouts/Layer1.png");
+    background-position: 0 -112px;
+    height:454px;
     -webkit-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
     box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
 }
-
 .layout-2 {
     height: 212px;
     background-image: url("./assets/layouts/Layer2.png");
@@ -64,9 +75,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-header {
+header div div {
     position: relative;
-    margin-top: 30px; 
+    /* margin-top: 30px;  */
     display: flex;
     flex-direction: row;
 }
