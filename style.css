@@ -13,6 +13,8 @@ body {
     margin: auto;
 }
 .layout-1 {
+    display: flex;
+    flex-flow: column;
     height: 566px;
     background-image: url("./assets/layouts/Layer1.png");
     -webkit-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
@@ -48,11 +50,12 @@ body {
 }
 .wrapper {
     width: 1024px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 header {
     position: relative;
-    top: 30px; 
+    margin-top: 30px; 
     display: flex;
     flex-direction: row;
 }
@@ -75,10 +78,9 @@ header {
 figcaption {
     margin: 6px 0 0 10px;
     font-size: 41px;
-    letter-spacing: 0px;
+    letter-spacing: 0.5px;
     color: #ffffff;
     font-family: "Lucida Sans italic", Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
     text-transform: uppercase;
 }
 nav {
@@ -145,4 +147,11 @@ nav li:hover{
 }
 #nav-mail a {
     padding: 2px 6px 0 0;
+}
+
+#video-content{
+    display: flex;
+}
+#video-nav {
+    display: flex;
 }
