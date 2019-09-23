@@ -8,6 +8,11 @@
     src: local('Lucida Sans italic'), local('Lucida Sans italic'), url(./assets/fonts/LSANSI.TTF) format('truetype');
 }
 
+@font-face {
+    font-family: 'Asap';
+    src: local('Asap'), local('Asap Regular'), url(./assets/fonts/Asap-Regular.ttf) format('truetype');
+}
+
 body {
     max-width: 1300px;
     margin: auto;
@@ -149,9 +154,38 @@ nav li:hover{
     padding: 2px 6px 0 0;
 }
 
-#video-content{
-    display: flex;
-}
 #video-nav {
     display: flex;
+}
+
+#video-content{
+    padding-top: 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    font-family: "Asap";
+    font-size: 63px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+span.yellow {
+    color: #f5c506;
+    padding-right: 14px;
+    padding-bottom: 5px;
+}
+
+video {
+    display: block;
+    padding-top: 26px;
+    padding-left: 12px; 
 }
