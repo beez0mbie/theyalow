@@ -302,3 +302,44 @@ li #paper-plane span {
 button#paper-plane  {
     border-left: none;
 }
+
+#yellow-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#yellow-section ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collapse {
+    display: flex;
+}
+
+#video-box button {
+    position: absolute;
+    z-index: 10;
+    width: 62px;
+    height: 62px;
+    margin: 94px 130px;
+    padding: 0 0 0 5px;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+#video-box button{
+    background-color: #f5c506;
+    border: none;
+}
+
+#video-box button:hover {
+    opacity: 0.7;
+}
+#video-box button:active{
+    opacity: 0.7;
+    background-color: #b99403;
+}
+#video-box button:focus{
+    outline: none;
+}
