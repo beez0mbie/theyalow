@@ -23,13 +23,7 @@ body {
     max-width: 1300px;
     margin: auto;
 }
-.layout-1 {
-    /* display: flex; */
-    /* flex-flow: column; */
-    /* height: 566px;
-    background-image: url("./assets/layouts/Layer1.png"); */
-    
-}
+
 .layout-1-1 {
     height: 82px;
     padding-top: 30px; 
@@ -77,7 +71,6 @@ body {
 }
 header div div {
     position: relative;
-    /* margin-top: 30px;  */
     display: flex;
     flex-direction: row;
 }
@@ -109,7 +102,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin: 40px 2px 0 0;
+    margin: 41px 2px 0 0;
 }
 
 nav ul {
@@ -120,7 +113,7 @@ nav ul {
 nav li {
     display: inline-block;
     width: 150px;
-    height: 42px;
+    height: 41px;
     background-color:#f5c505;
     text-transform: uppercase;
     font-family: "Segoe WP", Verdana, sans-serif;
