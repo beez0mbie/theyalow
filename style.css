@@ -19,6 +19,13 @@
     src: local('Asap'), local('Asap Regular'), url(./assets/fonts/Asap-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(./assets/fonts/PTSans-Regular.ttf) format('truetype');
+  }
+
 body {
     max-width: 1300px;
     margin: auto;
@@ -300,7 +307,15 @@ button#paper-plane  {
     display: flex;
     flex-direction: column;
 }
-
+#yellow-section h3 {
+    padding: 39px 0px 34px 2px;
+    font-family: "PT Sans";
+    font-size: 37px;
+    font-weight: 400;
+    letter-spacing: 0.37px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 #yellow-section ul {
     display: flex;
     justify-content: space-evenly;
