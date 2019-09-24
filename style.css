@@ -319,10 +319,35 @@ button#paper-plane  {
 #yellow-section ul {
     display: flex;
     justify-content: space-evenly;
+    height: 233px;
+}
+
+#yellow-section span {
+    display: inline-block;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    hyphens: auto;
 }
 
 .collapse {
     display: flex;
+}
+
+.collapse span{
+    padding: 16px 16px 0 31px;
+}
+
+.collapse div {
+    width: 342px;
+}
+
+.orange {
+    background-color: #ec9e03;
 }
 
 #video-box button {
