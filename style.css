@@ -52,7 +52,7 @@ body {
 }
 
 .layout-3 {
-    height: 509px;
+    height: 508px;
     background-image: url("./assets/layouts/Layer3.png");
     -webkit-box-shadow: inset -1px 36px 16px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -1px 36px 16px -38px rgba(0,0,0,0.75);
@@ -60,7 +60,7 @@ body {
 }
 
 .layout-4 {
-    height: 498px;
+    height: 497px;
     background-image: url("./assets/layouts/Layer4.png");
     -webkit-box-shadow: inset 0px -12px 9px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px -12px 9px -9px rgba(0,0,0,0.75);
@@ -68,7 +68,7 @@ body {
 }
 
 .layout-5 {
-    height: 65px;
+    height: 64px;
     background-color: #4c4c4c;
 }
 .wrapper {
@@ -239,6 +239,9 @@ span.yellow {
 #icon-area ul{
     display: flex;
     justify-content: space-evenly;
+    border-style: solid;
+    border-color: rgb(216, 216, 216);
+    border-width: 0  0  0  1px;
 }
 
 #icon-area ul li button{
@@ -250,7 +253,7 @@ span.yellow {
     align-items: center;
     border-bottom: none;
     background: transparent;
-
+    border-width: 0  1px   0  0;
 }
 
 #icon-area ul li button:hover{
@@ -279,10 +282,6 @@ li #cloud span {
     padding-left: 21px; 
 }
 
-button#cloud  {
-    border-right: none;
-}
-
 li #leaf {
     padding: 23px 33px 19px 53px;
 }
@@ -297,10 +296,6 @@ li #paper-plane {
 
 li #paper-plane span {
     padding-left: 4px;
-}
-
-button#paper-plane  {
-    border-left: none;
 }
 
 #yellow-section {
