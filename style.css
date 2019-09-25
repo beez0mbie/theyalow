@@ -10,6 +10,12 @@
 }
 
 @font-face {
+    font-family: 'Segoe UI';
+    font-weight: 900;
+    src: local('Segoe UI Bold'), url(./assets/fonts/segoeuib.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Lucida Sans italic';
     src: local('Lucida Sans italic'), local('Lucida Sans italic'), url(./assets/fonts/LSANSI.TTF) format('truetype');
 }
@@ -239,6 +245,7 @@ span.yellow {
 #icon-area ul{
     display: flex;
     justify-content: space-evenly;
+    margin: 0 1px 0 1px;
     border-style: solid;
     border-color: rgb(216, 216, 216);
     border-width: 0  0  0  1px;
@@ -256,13 +263,21 @@ span.yellow {
     border-width: 0  1px   0  0;
 }
 
-#icon-area ul li button:hover{
+#icon-area ul li button:hover object{
     opacity: 0.7;
 }
-#icon-area ul li button:active{
+#icon-area ul li button:hover span{
     opacity: 0.7;
-    background-color: #b99403;
 }
+#icon-area ul li button:active object{
+    opacity: 0.4;
+}
+
+#icon-area ul li button:active span{
+    opacity: 0.4;
+    transform: scale(0.5);
+}
+
 #icon-area ul li button:focus{
     outline: none;
 }
@@ -272,10 +287,11 @@ span.yellow {
     font-weight: 200;
     font-size: 27px;
     text-transform: uppercase;
+    letter-spacing: 0.4px;
 }
 
 li #cloud {
-    padding: 49px 30px 22px 26px;
+    padding: 50px 31px 22px 26px;
 }
 
 li #cloud span {
@@ -290,8 +306,7 @@ li #leaf object {
 }
 
 li #paper-plane {
-    margin-left: 1px;
-    padding: 43px 29px 22px 7px;
+    padding: 41px 29px 22px 7px;
 }
 
 li #paper-plane span {
@@ -313,12 +328,17 @@ li #paper-plane span {
 }
 #yellow-section ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 233px;
 }
 
-#yellow-section span {
+.orange {
+    background-color: #ec9e03;
+}
+
+#yellow-section ul span {
     display: inline-block;
+    align-self: flex-end;
     font-size: 29px;
     letter-spacing: 0px;
     line-height: 38px;
@@ -329,20 +349,32 @@ li #paper-plane span {
     hyphens: auto;
 }
 
+#yellow-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+#yellow-section div button.plus {
+    align-self: flex-end;
+    border: none;
+}
+
 .collapse {
     display: flex;
+    margin: 0 0 0 1px;
 }
 
 .collapse span{
-    padding: 16px 16px 0 31px;
+    padding: 16px 16px 0 30px;
 }
 
-.collapse div {
-    width: 342px;
+.collapse div {  
+    width: 341px;
 }
 
-.orange {
-    background-color: #ec9e03;
+.collapse button.plus {
+   padding: 2px 14px 0 0;
 }
 
 #video-box button {
@@ -350,15 +382,12 @@ li #paper-plane span {
     z-index: 10;
     width: 62px;
     height: 62px;
-    margin: 94px 130px;
-    padding: 0 0 0 5px;
+    margin: 93px 0 0 130px;
+    padding: 1px 0 0 5px;
     border-radius: 100%;
-    opacity: 0.8;
-}
-
-#video-box button{
-    background-color: #f5c506;
     border: none;
+    opacity: 0.8;
+    background-color: #f5c506;
 }
 
 #video-box button:hover {
@@ -370,4 +399,78 @@ li #paper-plane span {
 }
 #video-box button:focus{
     outline: none;
+}
+
+div.tweet {
+    width: 329px;
+    height: 233px;
+    margin: 0 4px 0 0;
+}
+
+.tweet span {
+    padding: 8px 16px
+}
+
+.tweet object {
+    padding: 4px;
+}
+
+.tweet button.plus{
+    padding: 8px 5px 0 0;
+}
+
+.date {
+    width: 113px;
+    height: 86px;
+    margin: 0 0 0 1px;
+    
+    background-color: #ddb101;
+}
+.date .center{
+    align-self: center;
+}
+.date strong{
+    display: inline-block;
+    padding: 13px 0 0 7px ;
+    font-family: "Segoe UI";
+    font-size: 49px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.date span {
+    padding: 0 0 0 6px;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #b26529;
+}
+
+input[type=range] {
+    width: 895px;
+    margin: 43px 0 0 76px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100px;
+    height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #fae592;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 198px;
+    border-radius: 50px;
+    background: #ec9e03;
+    cursor: pointer;
+    -webkit-appearance: none;
 }
