@@ -94,11 +94,16 @@ header div div {
 }
 .logo-top {
     position: absolute;
+}
+#big-top {
     top: -3px;
     left: 1px;
 }
 .logo-bottom {
     position: relative;
+    
+}
+#big-bottom {
     top: -2px;
     left: 4px;
 }
@@ -151,6 +156,10 @@ nav li a {
 nav li:hover{
     opacity: 0.7;
 }
+nav li:active{
+    opacity: 0.5;
+}
+
 #nav-head {
     width: 173px;
     border-right: 1px solid #b99403;
@@ -198,7 +207,7 @@ nav li:hover{
     opacity: 0.7;
 }
 #video-nav button:active{
-    background-color: #b99403;
+    opacity: 0.5;
 }
 #video-nav button:focus {
     outline: none;
@@ -390,8 +399,7 @@ span.yellow {
     opacity: 0.7;
 }
 #video-box button:active{
-    opacity: 0.7;
-    background-color: #b99403;
+    opacity: 0.5;
 }
 #video-box button:focus{
     outline: none;
@@ -553,4 +561,23 @@ input[type=range]::-webkit-slider-thumb {
 
 #phone {
     padding: 0 0 40px 1px;
+}
+
+footer .logo {
+    padding: 7px 0 0px 1px;
+}
+
+footer .logo-bottom {
+    padding: 0 0 0 2px;
+}
+
+footer .logo figcaption {
+    font-size: 29px;
+    padding: 0 0 0 7px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    font-family: "Lucida Sans italic", Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
 }
