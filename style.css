@@ -242,75 +242,68 @@ span.yellow {
     padding-bottom: 5px;
 }
 
-#icon-area ul{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 1px 0 1px;
-    border-style: solid;
-    border-color: rgb(216, 216, 216);
-    border-width: 0  0  0  1px;
-}
 
-#icon-area ul li button{
+#icon-area .grid {
     height: 212px;
-    width: 339px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left: 1px solid rgb(216, 216, 216);;
+}
+#icon-area .grid button{
+    margin: 0 1px 0 1px;
     display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-bottom: none;
+    border: none;
+    border-right: 1px solid rgb(216, 216, 216);
     background: transparent;
-    border-width: 0  1px   0  0;
 }
 
-#icon-area ul li button:hover object{
-    opacity: 0.7;
-}
-#icon-area ul li button:hover span{
-    opacity: 0.7;
-}
-#icon-area ul li button:active object{
-    opacity: 0.4;
-}
-
-#icon-area ul li button:active span{
-    opacity: 0.4;
-    transform: scale(0.5);
-}
-
-#icon-area ul li button:focus{
-    outline: none;
-}
-
-#icon-area ul li button span {
+#icon-area .grid button span {
     font-family: 'Segoe UI';
     font-weight: 200;
     font-size: 27px;
     text-transform: uppercase;
     letter-spacing: 0.4px;
+    line-height: 10px;
+
 }
 
-li #cloud {
-    padding: 50px 31px 22px 26px;
+#icon-area .grid button:hover {
+    opacity: 0.7;
 }
 
-li #cloud span {
-    padding-left: 21px; 
+#icon-area .grid button:active object{
+    opacity: 0.5;
+    transform: scale(0.9);
 }
 
-li #leaf {
-    padding: 23px 33px 19px 53px;
-}
-li #leaf object {
-    padding-left: 3px; 
+#icon-area .grid button:focus{
+    outline: none;
 }
 
-li #paper-plane {
-    padding: 41px 29px 22px 7px;
+.grid #cloud object {
+    padding: 15px 3px 22px 0px;
 }
 
-li #paper-plane span {
-    padding-left: 4px;
+.grid #cloud span {
+    padding: 0 0 0 21px;
+}
+
+.grid #leaf object{
+    padding: 10px 10px 10px 33px;
+}
+.grid #leaf span {
+    padding: 16px 14px 17px 35px;
+}
+
+.grid #paper-plane object {
+    padding: 12px 24px 6px 0;
+}
+
+.grid #paper-plane span {
+    padding: 15px 17px 3px 0px
 }
 
 #yellow-section {
