@@ -33,6 +33,7 @@
   }
 
 body {
+    min-width: 640px;
     max-width: 1300px;
     margin: auto;
 }
@@ -86,6 +87,9 @@ header div div {
     position: relative;
     display: flex;
     flex-direction: row;
+}
+.mobile-logo {
+    display: none;
 }
 .logo {
     display: flex;
@@ -235,7 +239,7 @@ nav li:active{
     background-size: 100% ;
 }
 
-h2 {
+#video-content h2 {
     display: flex;
     flex-direction: column;
     padding: 0 19px 4px 0;
@@ -248,7 +252,7 @@ h2 {
     color: #ffffff;
 }
 
-span.yellow {
+#video-content span.yellow {
     color: #f5c506;
     padding-right: 16px;
     padding-bottom: 5px;
@@ -580,4 +584,84 @@ footer .logo figcaption {
     text-transform: uppercase;
     text-align: center;
     text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: 640px;
+        height: 100%;
+    }
+    .layout-1-1 {
+        height: 62px;
+        padding: 0 0 0 0;
+        background-image: repeating-linear-gradient(to bottom,rgb(91, 91, 91) 0%,rgb(64, 64, 64) 100%);
+    }
+
+    .layout-1-2 {
+        background-image: url("./assets/mobile/layout/layout-birds.png");
+        height:327px;
+        background-position: 0 0;
+        -webkit-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
+        box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
+    }
+    
+    .layout-1-1 div {
+        align-items: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 0px 2px 11px;
+    }
+    .mobile-logo .logo-bottom {
+        padding: 0px 0px 0px 2px;
+    }
+    
+
+    h1 {
+        padding: 4px 0px 0 7px;
+        font-size: 19px;
+        text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    }
+    nav {
+        margin: 0 0 0 0;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    nav ul {
+        display: flex;
+        box-shadow: none;
+    }
+    nav li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    #video-nav {
+        padding: 0 0 0 0;
+        background: url("./assets/mobile/layout/transparent.png");
+    }
+
+    #video-nav button {
+        display: none;
+    }
+
+    #video-content {
+        justify-content: center;
+    }
+
+    #video-content div {
+        padding: 0 0 0 16px;
+    }
+
+    #video-content h2 {
+        display: none;
+    }
 }
