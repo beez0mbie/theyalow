@@ -103,10 +103,14 @@ header div div {
     left: 4px;
 }
 
-figcaption {
-    margin: 6px 0 0 10px;
+figcaption.hidden {
+    display: none;
+}
+
+h1 {
+    padding: 24px 0px 0 10px;
     font-size: 41px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     color: #ffffff;
     font-family: "Lucida Sans italic", Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
@@ -222,14 +226,13 @@ nav li:hover{
     background-size: 100% ;
 }
 
-h1 {
+h2 {
     display: flex;
     flex-direction: column;
-    padding-right: 16px;
-    padding-bottom: 4px;
+    padding: 0 19px 4px 0;
     font-family: "Asap";
     font-size: 63px;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
     line-height: 70px;
     text-transform: uppercase;
     text-align: center;
