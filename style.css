@@ -623,6 +623,16 @@ footer .logo figcaption {
         height: 489px;
         background: none;
     }
+    .layout-4 {
+        height: 466px;
+        background: none;
+        background-color: #474747;
+    }
+    .layout-5 {
+        height: 43px;
+        background-color: #4c4c4c;
+    }
+
     .layout-1-1 div {
         align-items: center;
     }
@@ -641,7 +651,6 @@ footer .logo figcaption {
         padding: 0px 0px 0px 2px;
     }
     
-
     h1 {
         padding: 4px 0px 0 7px;
         font-size: 19px;
@@ -847,5 +856,42 @@ footer .logo figcaption {
     #yellow-section input[type=range] {
         display: none;
     }
-   
+    #gray-section h3 {
+        text-align: center;
+        padding: 37px 10px 37px 0px;
+        font-size: 39px;
+        letter-spacing: 0.4px;
+        color: #f5c506;
+        font-family: "Open Sans";
+        font-weight: 400;
+    }
+    #gray-section .circle {
+        margin: 2px 0 0 27px;
+    }
+
+    #gray-section .flex {
+        padding: 0 0 0 36px;
+    }
+
+    #gray-section ul{
+        display: none;
+    }
+    footer .mobile-logo {
+        padding: 6px 0 0px 64px;
+    }
+    
+    footer .logo-bottom {
+        padding: 0 0 0 1px;
+    }
+    
+    footer .mobile-logo figcaption {
+        font-size: 17px;
+        padding: 0 0 0 7px;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+        font-family: "Lucida Sans italic", Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    }
 }
