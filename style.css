@@ -375,15 +375,21 @@ nav li:active{
 }
 
 .collapse span{
-    padding: 16px 16px 0 30px;
-}
+    text-align: start;
+    padding: 0px 7px 15px 31px;
+} 
 
 .collapse div {  
     width: 341px;
 }
 
 .collapse button.plus {
+height: 100%;
+   display: flex;
    padding: 2px 14px 0 0;
+}
+.collapse button.plus object{
+    align-self: flex-end;
 }
 
 #video-box button {
@@ -427,6 +433,9 @@ div.tweet {
     padding: 8px 5px 0 0;
 }
 
+#yellow-section #tweets {
+    display: none;
+}
 
 button.plus object:hover {
     transform: 
@@ -605,7 +614,15 @@ footer .logo figcaption {
         -moz-box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
         box-shadow: inset -1px -36px 16px -38px rgba(0,0,0,0.75);
     }
+    .layout-2 {
+        height: 166px;
+        background-image: url("./assets/layouts/Layer2.png");
     
+    }
+    .layout-3 {
+        height: 489px;
+        background: none;
+    }
     .layout-1-1 div {
         align-items: center;
     }
@@ -664,4 +681,112 @@ footer .logo figcaption {
     #video-content h2 {
         display: none;
     }
+
+    #yellow-section h3 {
+        display: none;
+    }
+
+    #yellow-section ul {
+        flex-direction: column;
+    }
+
+    #yellow-section .collapse {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+
+    #yellow-section .collapse div {
+        height: 232px;
+        width: 315px;
+    }
+    #yellow-section .collapse div.orange {
+        margin: 15px 9px 9px 9px;
+    }
+    #yellow-section .collapse button.plus object {
+        padding: 1px 0px;
+    }
+
+    #yellow-section .collapse span {
+        padding: 0px 0 0 25px;
+        line-height: 33px;
+    }
+
+    #yellow-section .collapse #video-box {
+        margin: 4px 8px 0 0;
+    }
+    #yellow-section div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #yellow-section .yellow {
+        background: #f5c505
+    }
+    #yellow-section .tweet #counter {
+        display: none;
+    }
+    #yellow-section .tweet div {
+        justify-content: space-evenly;
+    }
+    #yellow-section .tweet button {
+        display: none;
+    }
+    
+    #yellow-section .tweet object {
+        padding: 0;
+    }
+    #yellow-section .tweet #bird {
+        padding: 59px 32px 42px 83px;
+    }
+    #yellow-section #tweets {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 12px 0 0 11px;
+    }
+
+    #yellow-section #tweets span {
+        position: absolute;
+        width: 225px;
+        padding: 5px 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        color: #8f8e8e;
+    }
+    #yellow-section #tweets form {
+        padding: 0 0 0 26px;
+    }
+    #yellow-section #tweets input[type="text"] {
+        width: 200px;
+        height: 26px;
+        padding-right: 72px;
+        border: 1px solid #d0a706;
+        border-radius: 11px;
+        box-shadow: inset 8px 18px 22px -23px rgba(0, 0, 0, 0.473)
+    }
+    #yellow-section #tweets input[type="submit"] {
+        margin-left: -76px;
+        margin-right: 12px;
+        height: 29px;
+        width: 72px;
+        border: none;
+        border-radius: 0 11px 11px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        background-image: linear-gradient(0deg,#d08e0c 0%,#e9a725 100%);
+        
+    }
+    #yellow-section .date {
+        display: none;
+    }
+    #yellow-section input[type=range] {
+        display: none;
+    }
+
 }
