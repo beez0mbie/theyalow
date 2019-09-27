@@ -681,7 +681,56 @@ footer .logo figcaption {
     #video-content h2 {
         display: none;
     }
+    .mobile-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow:  0px -4px rgba(233, 233, 232, 0.5), 
+            0px -9px  rgba(233, 233, 232, 0.5);
+    }
+    #icon-area {
+        
+        height: 100%;
+    }
+    #icon-area .grid {
+        height: 100%;
+        border: none;
+    }
+    #icon-area .grid button {
+        justify-content: space-between;
+        border: none;
+    }
+    #icon-area .grid button span{
+        font-size: 23px;
+        letter-spacing: 0.2px;
+    }
 
+    #icon-area object{
+        height: 50%; 
+        width: 50%; 
+    }
+
+    #icon-area #cloud object{
+        padding: 21px 35px 0px 0px;
+    }
+    .grid #cloud span {
+        padding: 0 25px 32px 2px;
+    }
+        
+    #icon-area #leaf object{ 
+        padding: 22px 0 0 16px;
+    }
+    #icon-area #leaf span {
+        padding: 0px 0 32px 18px;
+    }
+    #icon-area #paper-plane object{
+        width: 79%; 
+        padding: 21px 7px 0 0;
+    }
+    #icon-area #paper-plane span {
+        padding: 0px 0 32px 5px;
+    }
+    
     #yellow-section h3 {
         display: none;
     }
