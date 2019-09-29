@@ -670,6 +670,25 @@ footer .logo figcaption {
         align-items: center;
         height: 100%;
     }
+
+    nav li div {
+        padding: 10px 0px 9px 6px;
+    }
+    nav li div a {
+        letter-spacing: 1.1px;
+    }
+    #nav-head a {
+        padding: 1px 2px 0 9px;
+    }
+
+    #nav-mail div {
+        padding: 0 0 0 12px;
+    }
+
+    #nav-mail a {
+        padding: 0 0 0 7px
+    }
+
     #video-nav {
         padding: 0 0 0 0;
         background: url("./assets/mobile/layout/transparent.png");
